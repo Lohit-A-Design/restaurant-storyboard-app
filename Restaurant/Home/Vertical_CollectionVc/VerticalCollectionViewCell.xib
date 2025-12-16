@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VerticalCollectionViewCell" id="gTV-IL-0wX" customClass="VerticalCollectionViewCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wnj-ma-TWE">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Pr8-ru-b5P"/>
+                            <constraint firstAttribute="width" constant="170" id="lJ8-vM-DzW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIL-JE-RNB">
+                        <rect key="frame" x="12" y="151" width="156" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="156" id="N4i-HB-OBG"/>
+                            <constraint firstAttribute="height" constant="25" id="uYu-dr-A5k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-e6-ZjG">
+                        <rect key="frame" x="12" y="177" width="156" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="KAi-yZ-O3C"/>
+                            <constraint firstAttribute="width" constant="156" id="zAO-8y-9aw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hIL-JE-RNB" secondAttribute="trailing" constant="2" id="42o-bh-4Oc"/>
+                <constraint firstItem="2bQ-e6-ZjG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="A2l-SQ-sug"/>
+                <constraint firstAttribute="trailing" secondItem="2bQ-e6-ZjG" secondAttribute="trailing" constant="2" id="IuP-4I-Es2"/>
+                <constraint firstItem="hIL-JE-RNB" firstAttribute="top" secondItem="wnj-ma-TWE" secondAttribute="bottom" constant="1" id="PzP-64-JdW"/>
+                <constraint firstItem="wnj-ma-TWE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SR1-Jk-cIU"/>
+                <constraint firstItem="hIL-JE-RNB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="TtG-1z-ZNO"/>
+                <constraint firstItem="2bQ-e6-ZjG" firstAttribute="top" secondItem="hIL-JE-RNB" secondAttribute="bottom" constant="1" id="h6L-US-yeh"/>
+                <constraint firstAttribute="trailing" secondItem="wnj-ma-TWE" secondAttribute="trailing" id="jAj-TK-ro4"/>
+                <constraint firstItem="wnj-ma-TWE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ogN-mj-G1K"/>
+            </constraints>
+            <size key="customSize" width="170" height="214"/>
+            <connections>
+                <outlet property="Lable" destination="hIL-JE-RNB" id="hdt-WI-gak"/>
+                <outlet property="Price" destination="2bQ-e6-ZjG" id="bAk-iG-yam"/>
+                <outlet property="VerticalImageView" destination="wnj-ma-TWE" id="cWq-zJ-F3u"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.14285714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

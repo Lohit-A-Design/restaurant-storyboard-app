@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HorizontalCollectionViewCell" id="gTV-IL-0wX" customClass="HorizontalCollectionViewCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LKt-k1-UsU">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="145" id="WCb-Wn-4LE"/>
+                            <constraint firstAttribute="height" constant="98" id="feF-d8-aDz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzx-W7-hiG">
+                        <rect key="frame" x="4" y="98" width="139" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="fpg-Mh-nEC"/>
+                            <constraint firstAttribute="width" constant="139" id="npY-JC-oUD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vzx-W7-hiG" firstAttribute="top" secondItem="LKt-k1-UsU" secondAttribute="bottom" id="6sh-jE-IJI"/>
+                <constraint firstItem="LKt-k1-UsU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FjC-gK-748"/>
+                <constraint firstItem="LKt-k1-UsU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X3T-YC-dyl"/>
+                <constraint firstItem="vzx-W7-hiG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="hpc-cl-Vou"/>
+                <constraint firstAttribute="trailing" secondItem="vzx-W7-hiG" secondAttribute="trailing" constant="2" id="o3l-me-98Z"/>
+                <constraint firstAttribute="trailing" secondItem="LKt-k1-UsU" secondAttribute="trailing" id="q5Z-hX-SM2"/>
+            </constraints>
+            <connections>
+                <outlet property="HorizontalCvImage" destination="LKt-k1-UsU" id="TDP-7X-Z47"/>
+                <outlet property="HorizontalCvLable" destination="vzx-W7-hiG" id="xNI-By-Z1J"/>
+            </connections>
+            <point key="canvasLocation" x="31.159420289855074" y="107.47767857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>
